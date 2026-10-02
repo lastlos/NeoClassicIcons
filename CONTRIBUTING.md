@@ -15,7 +15,7 @@ knkwwwwwwwwwknk.
 ```
 
 - **File names** are `lower_case_with_underscores`. The name becomes the resource name, the PNG file name and the constant (`document_save` → `nciDocumentSave`).
-- **Categories:** `File`, `Edit`, `Action`, `Navigation`, `Data`, `Application`.
+- **Categories:** `File`, `Edit`, `Action`, `Navigation`, `Data`, `Application`, `Device`, `Media`, `Format`.
 - **Every character is one pixel**, taken from the palette below. `.` is transparent.
 
 | Char | Colour | RGB | | Char | Colour | RGB |

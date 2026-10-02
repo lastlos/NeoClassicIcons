@@ -137,7 +137,7 @@ def order_icons(icons, write_order=True):
     return [by_name[n] for n in order]
 
 
-CATEGORY_ORDER = ["File", "Edit", "Action", "Navigation", "Data", "Application"]
+CATEGORY_ORDER = ["File", "Edit", "Action", "Navigation", "Data", "Application", "Device", "Media", "Format"]
 
 
 # --------------------------------------------------------------------------- .res
@@ -189,6 +189,11 @@ interface
 const
   NeoClassicIconCount = %d;
 
+  { Fingerprint of the icon artwork. It changes whenever a pixel changes, which
+    makes FPC recompile the units that link neoclassicicons_images.res -
+    otherwise an edited icon would keep showing the old, cached resource. }
+  NeoClassicIconSetHash = '%s';
+
   // Image indexes in TNeoClassicImageList
 %s
 
@@ -222,6 +227,14 @@ end.
 """
 
 
+def icon_set_hash(icons):
+    import hashlib
+    h = hashlib.sha1()
+    for i in icons:
+        h.update(i.name.encode() + b"\n" + "\n".join(i.rows).encode() + b"\n")
+    return h.hexdigest()[:16]
+
+
 def write_pascal(path, icons):
     w = max(len(i.const) for i in icons)
     consts, cat = [], None
@@ -233,7 +246,7 @@ def write_pascal(path, icons):
     names = ",\n".join("    '%s'" % i.name for i in icons)
     titles = ",\n".join("    '%s'" % i.title.replace("'", "''") for i in icons)
     with open(path, "w", encoding="utf-8", newline="\n") as f:
-        f.write(PAS_HEADER % (len(icons), "\n".join(consts), names, titles))
+        f.write(PAS_HEADER % (len(icons), icon_set_hash(icons), "\n".join(consts), names, titles))
 
 
 # --------------------------------------------------------------------------- docs

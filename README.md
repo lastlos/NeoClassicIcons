@@ -10,7 +10,7 @@
 
 ## Features
 
-- **78 icons** in six categories: file, edit, action, navigation, data and general application icons.
+- **141 icons** in nine categories: file, edit, action, navigation, data, application, device, media and text formatting.
 - **Pixel art in the classic 16-colour palette**, hand-made at 16×16, with pixel-doubled 32×32 versions so they stay crisp on HiDPI screens.
 - **`TNeoClassicImageList`**: drop it on a form and all icons are already there. Choose them in the Object Inspector or use readable constants such as `nciDocumentSave`.
 - **No image data in your `.lfm` files.** The icons are linked as resources, so forms stay small and diffs stay clean.

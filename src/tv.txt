@@ -1,0 +1,18 @@
+# title: Television
+# category: Device
+...k.......k....
+....k.....k.....
+.....k...k......
+......k.k.......
+.kkkkkkkkkkkkkk.
+.ktttttttttttdk.
+.ktkkkkkkkktddk.
+.ktkcCCCCCkdsdk.
+.ktkcCCCCCkdgdk.
+.ktkCCCCCCkdddk.
+.ktkCCCCCCkdsdk.
+.ktkCCCCCCkdgdk.
+.ktkkkkkkkkdddk.
+.kddddddddddddk.
+.kkkkkkkkkkkkkk.
+..kk........kk..

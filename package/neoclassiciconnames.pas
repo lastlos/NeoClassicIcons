@@ -9,7 +9,12 @@ unit NeoClassicIconNames;
 interface
 
 const
-  NeoClassicIconCount = 78;
+  NeoClassicIconCount = 141;
+
+  { Fingerprint of the icon artwork. It changes whenever a pixel changes, which
+    makes FPC recompile the units that link neoclassicicons_images.res -
+    otherwise an edited icon would keep showing the old, cached resource. }
+  NeoClassicIconSetHash = 'a7d018de45662e2e';
 
   // Image indexes in TNeoClassicImageList
   // File
@@ -96,6 +101,75 @@ const
   nciUserAdd         = 75;  { Add user }
   nciUsers           = 76;  { Users }
   nciWarning         = 77;  { Warning }
+  // File
+  nciFolderDelete    = 78;  { Delete folder }
+  // Data
+  nciChartLine       = 79;  { Line chart }
+  nciDatabaseDelete  = 80;  { Delete database }
+  // Application
+  nciBell            = 81;  { Notification }
+  nciBookmark        = 82;  { Bookmark }
+  nciBug             = 83;  { Bug / Debug }
+  nciBuilding        = 84;  { Company }
+  nciCar             = 85;  { Vehicle }
+  nciChat            = 86;  { Chat / Comment }
+  nciCloud           = 87;  { Cloud }
+  nciCreditCard      = 88;  { Credit card }
+  nciDownload        = 89;  { Download }
+  nciEye             = 90;  { View }
+  nciGift            = 91;  { Gift }
+  nciHeart           = 92;  { Heart / Like }
+  nciHourglass       = 93;  { Wait }
+  nciLink            = 94;  { Link }
+  nciLocation        = 95;  { Location }
+  nciMoon            = 96;  { Night / Dark theme }
+  nciPlugin          = 97;  { Plugin }
+  nciReceipt         = 98;  { Receipt / Invoice }
+  nciShield          = 99;  { Security }
+  nciSun             = 100; { Day / Light theme }
+  nciTerminal        = 101; { Terminal }
+  nciTrophy          = 102; { Trophy / Award }
+  nciUpload          = 103; { Upload }
+  nciUserDelete      = 104; { Delete user }
+  nciWallet          = 105; { Wallet }
+  nciWrench          = 106; { Tools }
+  // Device
+  nciBattery         = 107; { Battery }
+  nciCamera          = 108; { Camera }
+  nciCd              = 109; { CD / DVD }
+  nciComputer        = 110; { Computer }
+  nciHardDisk        = 111; { Hard disk }
+  nciKeyboard        = 112; { Keyboard }
+  nciLaptop          = 113; { Laptop }
+  nciMobilePhone     = 114; { Mobile phone }
+  nciMonitor         = 115; { Monitor }
+  nciMouse           = 116; { Mouse }
+  nciNetwork         = 117; { Network }
+  nciPower           = 118; { Power }
+  nciServer          = 119; { Server }
+  nciTv              = 120; { Television }
+  // Media
+  nciHeadphones      = 121; { Headphones }
+  nciMicrophone      = 122; { Microphone }
+  nciMusic           = 123; { Music }
+  nciMute            = 124; { Mute }
+  nciPause           = 125; { Pause }
+  nciPlay            = 126; { Play }
+  nciRecord          = 127; { Record }
+  nciStop            = 128; { Stop }
+  nciVideo           = 129; { Video }
+  nciVolume          = 130; { Volume }
+  // Format
+  nciAlignCenter     = 131; { Center }
+  nciAlignLeft       = 132; { Align left }
+  nciAlignRight      = 133; { Align right }
+  nciColorPalette    = 134; { Colour palette }
+  nciFont            = 135; { Font }
+  nciListBullet      = 136; { Bulleted list }
+  nciPaintBrush      = 137; { Paint brush }
+  nciTextBold        = 138; { Bold }
+  nciTextItalic      = 139; { Italic }
+  nciTextUnderline   = 140; { Underline }
 
   // Resource base names (16 px: NAME, 32 px: NAME_200)
   NeoClassicIconList: array[0..NeoClassicIconCount - 1] of string = (
@@ -176,7 +250,70 @@ const
     'user',
     'user_add',
     'users',
-    'warning'
+    'warning',
+    'folder_delete',
+    'chart_line',
+    'database_delete',
+    'bell',
+    'bookmark',
+    'bug',
+    'building',
+    'car',
+    'chat',
+    'cloud',
+    'credit_card',
+    'download',
+    'eye',
+    'gift',
+    'heart',
+    'hourglass',
+    'link',
+    'location',
+    'moon',
+    'plugin',
+    'receipt',
+    'shield',
+    'sun',
+    'terminal',
+    'trophy',
+    'upload',
+    'user_delete',
+    'wallet',
+    'wrench',
+    'battery',
+    'camera',
+    'cd',
+    'computer',
+    'hard_disk',
+    'keyboard',
+    'laptop',
+    'mobile_phone',
+    'monitor',
+    'mouse',
+    'network',
+    'power',
+    'server',
+    'tv',
+    'headphones',
+    'microphone',
+    'music',
+    'mute',
+    'pause',
+    'play',
+    'record',
+    'stop',
+    'video',
+    'volume',
+    'align_center',
+    'align_left',
+    'align_right',
+    'color_palette',
+    'font',
+    'list_bullet',
+    'paint_brush',
+    'text_bold',
+    'text_italic',
+    'text_underline'
   );
 
   // Short English descriptions, same order
@@ -258,7 +395,70 @@ const
     'User',
     'Add user',
     'Users',
-    'Warning'
+    'Warning',
+    'Delete folder',
+    'Line chart',
+    'Delete database',
+    'Notification',
+    'Bookmark',
+    'Bug / Debug',
+    'Company',
+    'Vehicle',
+    'Chat / Comment',
+    'Cloud',
+    'Credit card',
+    'Download',
+    'View',
+    'Gift',
+    'Heart / Like',
+    'Wait',
+    'Link',
+    'Location',
+    'Night / Dark theme',
+    'Plugin',
+    'Receipt / Invoice',
+    'Security',
+    'Day / Light theme',
+    'Terminal',
+    'Trophy / Award',
+    'Upload',
+    'Delete user',
+    'Wallet',
+    'Tools',
+    'Battery',
+    'Camera',
+    'CD / DVD',
+    'Computer',
+    'Hard disk',
+    'Keyboard',
+    'Laptop',
+    'Mobile phone',
+    'Monitor',
+    'Mouse',
+    'Network',
+    'Power',
+    'Server',
+    'Television',
+    'Headphones',
+    'Microphone',
+    'Music',
+    'Mute',
+    'Pause',
+    'Play',
+    'Record',
+    'Stop',
+    'Video',
+    'Volume',
+    'Center',
+    'Align left',
+    'Align right',
+    'Colour palette',
+    'Font',
+    'Bulleted list',
+    'Paint brush',
+    'Bold',
+    'Italic',
+    'Underline'
   );
 
 { Returns the image index for an icon name such as 'document_save', or -1. }

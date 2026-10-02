@@ -10,7 +10,7 @@
 
 ## Özellikler
 
-- **78 ikon**, altı kategoride: dosya, düzen, işlem, gezinme, veri ve genel uygulama ikonları.
+- **141 ikon**, dokuz kategoride: dosya, düzen, işlem, gezinme, veri, uygulama, cihaz, medya ve metin biçimlendirme.
 - **Klasik 16 renk paletinde piksel art.** Her ikon 16×16 olarak elle çizildi. 32×32 sürümleri pikseller ikiye katlanarak üretildi, bu yüzden HiDPI ekranda da keskin kalır.
 - **`TNeoClassicImageList`**: Forma bıraktığınızda tüm ikonlar içinde hazır gelir. Nesne Denetçisi'nden seçebilir ya da `nciDocumentSave` gibi okunaklı sabitler kullanabilirsiniz.
 - **`.lfm` dosyanıza görüntü verisi yazılmaz.** İkonlar kaynak (resource) olarak bağlanır; formlar küçük, diff'ler temiz kalır.

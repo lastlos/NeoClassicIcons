@@ -8,8 +8,8 @@ reordering an icon changes image indexes and is therefore a breaking change.
 ## [1.0.0] - 2026-10-02
 
 ### Added
-- 78 icons in six categories (File, Edit, Action, Navigation, Data, Application),
-  16x16 pixel art with pixel-doubled 32x32 versions.
+- 141 icons in nine categories (File, Edit, Action, Navigation, Data, Application,
+  Device, Media, Format), 16x16 pixel art with pixel-doubled 32x32 versions.
 - Lazarus package `neoclassicicons` with `TNeoClassicImageList` (self-filling,
   HiDPI resolutions 16/24/32, no image data in .lfm files) and the
   `NeoClassicIconNames` unit with `nciXxx` index constants.
