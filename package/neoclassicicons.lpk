@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="neoclassicicons"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="OpenLast"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="NeoClassicIcons: 16x16 pixel-art icons in the classic Windows 9x / Delphi 7 style, with a self-filling TNeoClassicImageList component (HiDPI aware) and an optional classic GTK2 theme unit."/>
+    <License Value="MIT - see LICENSE"/>
+    <Version Major="1"/>
+    <Files>
+      <Item>
+        <Filename Value="neoclassicimagelist.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="NeoClassicImageList"/>
+      </Item>
+      <Item>
+        <Filename Value="neoclassiciconnames.pas"/>
+        <UnitName Value="NeoClassicIconNames"/>
+      </Item>
+      <Item>
+        <Filename Value="neoclassictheme.pas"/>
+        <UnitName Value="NeoClassicTheme"/>
+      </Item>
+      <Item>
+        <Filename Value="neoclassicicons_images.res"/>
+        <Type Value="Binary"/>
+      </Item>
+    </Files>
+    <CompatibilityMode Value="True"/>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

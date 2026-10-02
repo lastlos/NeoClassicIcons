@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Lazarus, Pillow and Xvfb
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends lazarus python3-pil xvfb
+
+      - name: Generated files match src/
+        run: python3 tools/build.py --check
+
+      - name: Compile package
+        run: lazbuild package/neoclassicicons.lpk
+
+      - name: Compile demo
+        run: lazbuild examples/demo/demo.lpi
+
+      - name: Run tests
+        run: |
+          lazbuild tests/imagelisttest.lpi
+          xvfb-run -a tests/imagelisttest

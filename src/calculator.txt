@@ -1,0 +1,18 @@
+# title: Calculator
+# category: Application
+..kkkkkkkkkkkk..
+..kssssssssssk..
+..kskkkkkkkksk..
+..kskllllllksk..
+..kskkkkkkkksk..
+..kssssssssssk..
+..kswwswwswwsk..
+..kswgswgswgsk..
+..kssssssssssk..
+..kswwswwswwsk..
+..kswgswgswgsk..
+..kssssssssssk..
+..kswwswwsrrsk..
+..kswgswgsrrsk..
+..kssssssssssk..
+..kkkkkkkkkkkk..

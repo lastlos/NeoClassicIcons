@@ -1,0 +1,18 @@
+# title: Database
+# category: Data
+................
+....kkkkkkkk....
+..kkwwwwwwwwkk..
+..kwyyyyyyyyok..
+..kkyyyyyyyykk..
+..kwkkkkkkkkok..
+..kwyyyyyyyyok..
+..kwyyyyyyyyok..
+..koyyyyyyyyok..
+..kwoooooooook..
+..kwyyyyyyyyok..
+..koyyyyyyyyok..
+..kooooooooook..
+..kkooooooookk..
+....kkkkkkkk....
+................

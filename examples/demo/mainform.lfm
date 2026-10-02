@@ -1,0 +1,234 @@
+object frmMain: TfrmMain
+  Left = 300
+  Height = 560
+  Top = 150
+  Width = 820
+  Caption = 'NeoClassicIcons Demo'
+  ClientHeight = 560
+  ClientWidth = 820
+  Menu = mnuMain
+  Position = poScreenCenter
+  ShowHint = True
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object tbMain: TToolBar
+    Left = 0
+    Height = 28
+    Top = 0
+    Width = 820
+    AutoSize = True
+    ButtonHeight = 26
+    EdgeBorders = [ebTop, ebBottom]
+    Images = ilSmall
+    List = True
+    ShowCaptions = True
+    TabOrder = 0
+    object tbNew: TToolButton
+      Left = 1
+      Top = 2
+      AutoSize = True
+      Caption = 'New'
+      Hint = 'nciDocumentNew'
+    end
+    object tbOpen: TToolButton
+      Left = 60
+      Top = 2
+      AutoSize = True
+      Caption = 'Open'
+      Hint = 'nciDocumentOpen'
+    end
+    object tbSave: TToolButton
+      Left = 120
+      Top = 2
+      AutoSize = True
+      Caption = 'Save'
+      Hint = 'nciDocumentSave'
+    end
+    object tbSep1: TToolButton
+      Left = 180
+      Height = 26
+      Top = 2
+      Style = tbsSeparator
+    end
+    object tbCopy: TToolButton
+      Left = 188
+      Top = 2
+      AutoSize = True
+      Caption = 'Copy name'
+      Hint = 'Copy the selected icon name'
+      OnClick = miCopyNameClick
+    end
+    object tbFind: TToolButton
+      Left = 290
+      Top = 2
+      AutoSize = True
+      Caption = 'Find'
+      Hint = 'Filter icons'
+      OnClick = tbFindClick
+    end
+    object tbSep2: TToolButton
+      Left = 350
+      Height = 26
+      Top = 2
+      Style = tbsSeparator
+    end
+    object tbAbout: TToolButton
+      Left = 358
+      Top = 2
+      AutoSize = True
+      Caption = 'About'
+      OnClick = miAboutClick
+    end
+    object tbExit: TToolButton
+      Left = 420
+      Top = 2
+      AutoSize = True
+      Caption = 'Exit'
+      OnClick = miExitClick
+    end
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Height = 38
+    Top = 28
+    Width = 820
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 38
+    ClientWidth = 820
+    TabOrder = 1
+    object lblFilter: TLabel
+      Left = 10
+      Height = 17
+      Top = 11
+      Width = 40
+      Caption = '&Filter:'
+      FocusControl = edFilter
+    end
+    object edFilter: TEdit
+      Left = 60
+      Height = 25
+      Top = 7
+      Width = 240
+      TabOrder = 0
+      TextHint = 'name or description...'
+      OnChange = edFilterChange
+    end
+    object lblView: TLabel
+      Left = 320
+      Height = 17
+      Top = 11
+      Width = 40
+      Caption = '&View:'
+      FocusControl = cbView
+    end
+    object cbView: TComboBox
+      Left = 365
+      Height = 25
+      Top = 7
+      Width = 170
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'Icons (32 px)'
+        'Details (16 px)'
+        'List (16 px)'
+      )
+      Style = csDropDownList
+      TabOrder = 1
+      Text = 'Icons (32 px)'
+      OnChange = cbViewChange
+    end
+  end
+  object lvIcons: TListView
+    Left = 6
+    Height = 466
+    Top = 66
+    Width = 808
+    Align = alClient
+    BorderSpacing.Left = 6
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 6
+    Columns = <
+      item
+        Caption = 'Name'
+        Width = 170
+      end
+      item
+        Caption = 'Constant'
+        Width = 170
+      end
+      item
+        Caption = 'Index'
+        Width = 60
+      end
+      item
+        Caption = 'Description'
+        Width = 300
+      end>
+    LargeImages = ilLarge
+    ReadOnly = True
+    RowSelect = True
+    SmallImages = ilSmall
+    TabOrder = 2
+    ViewStyle = vsIcon
+    OnSelectItem = lvIconsSelectItem
+  end
+  object sbStatus: TStatusBar
+    Left = 0
+    Height = 22
+    Top = 538
+    Width = 820
+    Panels = <
+      item
+        Width = 120
+      end
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object ilSmall: TNeoClassicImageList
+    Left = 40
+    Top = 200
+  end
+  object ilLarge: TNeoClassicImageList
+    Height = 32
+    Width = 32
+    Left = 120
+    Top = 200
+  end
+  object mnuMain: TMainMenu
+    Images = ilSmall
+    Left = 200
+    Top = 200
+    object miFile: TMenuItem
+      Caption = '&File'
+      object miExit: TMenuItem
+        Caption = 'E&xit'
+        OnClick = miExitClick
+      end
+    end
+    object miEdit: TMenuItem
+      Caption = '&Edit'
+      object miCopyName: TMenuItem
+        Caption = 'Copy icon &name'
+        OnClick = miCopyNameClick
+      end
+      object miSep1: TMenuItem
+        Caption = '-'
+      end
+      object miCopyConst: TMenuItem
+        Caption = 'Copy &constant'
+        OnClick = miCopyConstClick
+      end
+    end
+    object miHelp: TMenuItem
+      Caption = '&Help'
+      object miAbout: TMenuItem
+        Caption = '&About...'
+        OnClick = miAboutClick
+      end
+    end
+  end
+end

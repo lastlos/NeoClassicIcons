@@ -1,0 +1,18 @@
+# title: Phone
+# category: Application
+................
+................
+..kkkkkkkkkkkk..
+.kmmmmmmmmmmmmk.
+kmrrkkkkkkkkrrmk
+kmrrk......krrmk
+.kkk.kkkkkk.kkk.
+....kmrrrrmk....
+...kmrkrrkrmk...
+..kmrrrrrrrrmk..
+..kmrkrrkrrkmk..
+..kmrrrrrrrrmk..
+..kmrkrrkrrkmk..
+..kmmmmmmmmmmk..
+..kkkkkkkkkkkk..
+................

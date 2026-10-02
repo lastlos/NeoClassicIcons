@@ -1,0 +1,18 @@
+# title: Last record
+# category: Navigation
+................
+................
+..n........nnn..
+..nn.......nnn..
+..nbnn.....nnn..
+..nbbnn....nnn..
+..nbbbbnn..nnn..
+..nbbbbbnn.nnn..
+..nbbbbnnn.nnn..
+..nbbbnnn..nnn..
+..nbnnn....nnn..
+..nnnn.....nnn..
+..nn.......nnn..
+..n........nnn..
+................
+................
