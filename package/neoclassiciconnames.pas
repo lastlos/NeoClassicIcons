@@ -32,6 +32,7 @@ const
   nciFolder          = 11;  { Folder }
   nciFolderAdd       = 12;  { New folder }
   nciFolderOpen      = 13;  { Open folder }
+  nciFolderDelete    = 78;  { Delete folder }
   // Edit
   nciEdit            = 14;  { Edit }
   nciEditCopy        = 15;  { Copy }
@@ -72,6 +73,8 @@ const
   nciTable           = 47;  { Table }
   nciTableAdd        = 48;  { Add record }
   nciTableDelete     = 49;  { Delete record }
+  nciChartLine       = 79;  { Line chart }
+  nciDatabaseDelete  = 80;  { Delete database }
   // Application
   nciAttachment      = 50;  { Attachment }
   nciBarcode         = 51;  { Barcode }
@@ -101,12 +104,6 @@ const
   nciUserAdd         = 75;  { Add user }
   nciUsers           = 76;  { Users }
   nciWarning         = 77;  { Warning }
-  // File
-  nciFolderDelete    = 78;  { Delete folder }
-  // Data
-  nciChartLine       = 79;  { Line chart }
-  nciDatabaseDelete  = 80;  { Delete database }
-  // Application
   nciBell            = 81;  { Notification }
   nciBookmark        = 82;  { Bookmark }
   nciBug             = 83;  { Bug / Debug }
