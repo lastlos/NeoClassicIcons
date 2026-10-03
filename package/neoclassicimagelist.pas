@@ -1,7 +1,7 @@
 unit NeoClassicImageList;
 
 { NeoClassicIcons - classic 16x16 pixel-art icons for Lazarus.
-  https://github.com/OpenLast/NeoClassicIcons
+  https://github.com/lastlos/NeoClassicIcons
   SPDX-License-Identifier: MIT
 
   TNeoClassicImageList is a TImageList that fills itself with all NeoClassic

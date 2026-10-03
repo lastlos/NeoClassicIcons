@@ -1,7 +1,7 @@
 unit NeoClassicTheme;
 
 { NeoClassicIcons - optional Windows 2000 / Delphi 7 look for GTK2 applications.
-  https://github.com/OpenLast/NeoClassicIcons
+  https://github.com/lastlos/NeoClassicIcons
   SPDX-License-Identifier: MIT
 
   Add this unit to your .lpr uses clause BEFORE "Interfaces":

@@ -189,7 +189,7 @@ procedure TfrmMain.miAboutClick(Sender: TObject);
 begin
   MessageDlg('NeoClassicIcons',
     Format('%d classic 16x16 pixel-art icons for Lazarus.' + LineEnding +
-           'MIT License - github.com/OpenLast/NeoClassicIcons', [NeoClassicIconCount]),
+           'MIT License - github.com/lastlos/NeoClassicIcons', [NeoClassicIconCount]),
     mtInformation, [mbOK], 0);
 end;
 
